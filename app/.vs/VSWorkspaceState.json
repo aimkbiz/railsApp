@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\assets",
+    "\\assets\\config",
+    "\\assets\\javascripts",
+    "\\channels",
+    "\\channels\\application_cable",
+    "\\helpers",
+    "\\views",
+    "\\views\\chat",
+    "\\views\\layouts"
+  ],
+  "SelectedNode": "\\controllers\\chat_controller.rb",
+  "PreviewInSolutionExplorer": false
+}

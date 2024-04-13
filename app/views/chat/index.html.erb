@@ -1,0 +1,33 @@
+
+<center>
+<br>
+<a href="http://v157-7-196-170.myvps.jp/">トップに戻る</a>
+
+<h1>対話型チャットあいみく</h1>
+<!--<%= @times %><br>-->
+
+<img alt="Flower" src="/assets/aimk.gif" width="200" hight="200" /><br>
+
+<br>
+<%= @msg %><br>
+
+<%= form_for('Chat', url: chat_regist_path) do |f| %>
+    <p>
+        <%= f.text_field :comment %>
+    </p>
+    <%= f.hidden_field :ip_addres, :value => @ip_addres %>
+    <%= f.submit "会話"%>
+<% end %>
+
+<%= @comment %>
+<br>
+<%= @userAccess[0].access_count %>回目のご訪問ありがとうございます 
+<br><br><br>
+
+総訪問者数
+<% if @ip_addres == "60.111.53.135" %>
+<%= @allCount %>
+<% end %>
+
+<!-- %= @ip % --> 
+<center>
